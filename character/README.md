@@ -46,3 +46,39 @@ query {
 ---
 
 Repeat for pages 2, 3, and 4!
+
+
+# Fetching Episode Details – Rick and Morty GraphQL API
+
+This directory contains sample GraphQL queries to fetch the details of specific episodes from the Rick and Morty API by their ID.  
+For each episode (IDs 1–4), a query is provided, along with the output returned by the API.
+
+**Fields retrieved for each episode:**  
+- `id`
+- `name`
+- `air_date`
+- `episode`
+
+**How to use:**
+- Use the Rick and Morty GraphQL Playground: https://rickandmortyapi.com/graphql
+- Paste the query from the relevant `.graphql` file.
+- The corresponding `.json` file shows the expected output.
+
+---
+
+## Example Query (for episode ID 1):
+
+```graphql
+query {
+  episode(id: 1) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+```
+
+---
+
+Repeat for episode IDs 2, 3, and 4!
